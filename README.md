@@ -54,3 +54,11 @@ factors of your solution? What issues do you think the users will run into immed
 
 2. Besides drive times, what other factors should Gerald be considering to optimize
 sending the right clinician to a patient?
+
+    - Clinician working hours
+    - Lab operating hours
+    - Average duration of visit
+
+
+ASSUMPTIONS MADE: 
+The clinicians have designated labs, so there should be a join's table between the clinician's table and the lab table. A model association would be built to access a clinician's designated lab address.
