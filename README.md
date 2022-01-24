@@ -49,15 +49,18 @@ Solution
 You can write the solution in any language you prefer.
 Conclusion
 Please add considerations to the following items in the README:
+
 1. If we were to release the MVP to Production as Gerald requested, what are the limiting
 factors of your solution? What issues do you think the users will run into immediately?
+
+    - This solution only takes distance into consideration. A limiting factor is the lack of knowledge on each clinician's existing schedules. A clinician can be closer to a patient, but they may not have anymore availabilities that day to talk to new patients. The patient's schedule, in turn, should also be considered. 
 
 2. Besides drive times, what other factors should Gerald be considering to optimize
 sending the right clinician to a patient?
 
-    - Clinician working hours
-    - Lab operating hours
-    - Average duration of visit
+    - Clinician working hours should be considered to properly disqualify clinicians from any trips that would take them longer than the rest of their working period allows for.
+    - Lab operating hours should be considered to properly disqualify clinicians from any trips where the clinician would not be able to make it to the lab in time.
+    - Average duration of visit per diagnosis type is important to consider to calculate how much time a clinician has during the rest of their working hours, and how much time they would need to drop off a lab sample.
 
 
 ASSUMPTIONS MADE: 

@@ -3,7 +3,7 @@
 // A model association would be built to access a clinician's designated lab address.
 
 const clinicians = ["Barb", "Isaac", "Marisol", "Mary", "Shawna", "Shelly", "Tom"]; // represents what would be a model of clinician names, addresses, and association to lab addresses
-let distances = [] // format will be [clinician name, total distance of clinician's trip]
+let distances = [] // format will be [{clinician name, total distance of clinician's trip}]
 
 
 function calculateDistance(patientAddress, labBool) {
@@ -30,14 +30,12 @@ function clinicianToLab(address1, address2) {
 }
 
 function distanceSort() {
-    
     distances.sort(function(a, b) {
         return a.miles - b.miles
     })    
 }
 
 
-
 calculateDistance()
 distanceSort()
-console.log(distances[0])
+console.log(distances[0]) // returns the clinician with the least total distance to travel
