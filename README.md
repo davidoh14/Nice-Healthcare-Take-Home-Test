@@ -61,7 +61,9 @@ sending the right clinician to a patient?
     - Clinician working hours should be considered to properly disqualify clinicians from any trips that would take them longer than the rest of their working period allows for.
     - Lab operating hours should be considered to properly disqualify clinicians from any trips where the clinician would not be able to make it to the lab in time.
     - Average duration of visit per diagnosis type is important to consider to calculate how much time a clinician has during the rest of their working hours, and how much time they would need to drop off a lab sample.
+    - Traffic jams or rush hour may contribute to additional time being needed for each trip. 
 
 
 ASSUMPTIONS MADE: 
-The clinicians have designated labs, so there should be a join's table between the clinician's table and the lab table. A model association would be built to access a clinician's designated lab address.
+- The clinicians have designated labs, so there should be a join's table between the clinician's table and the lab table. A model association would be built to access a clinician's designated lab address.
+- The logic will automatically choose a clinician for the user, rather than displaying numerous choices. Displaying multiple clinicians would be a simple change, as they have already been sorted in ascending order by miles needed to travel. 
